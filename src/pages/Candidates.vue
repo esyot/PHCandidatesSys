@@ -40,19 +40,23 @@ const toggleCandidatePortfolioModal = (candidate) => {
   gap: 0.5rem;
   padding: 2px;
 }
+
+@media (orientation: landscape) {
+  .card {
+    &:hover {
+      transition: ease-in-out;
+      transition-duration: 300ms;
+      scale: 1.5;
+      cursor: pointer;
+    }
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
   box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    transition: ease-in-out;
-    transition-duration: 300ms;
-    scale: 1.5;
-    cursor: pointer;
-  }
 
   img {
     position: inherit;
