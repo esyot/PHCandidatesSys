@@ -113,6 +113,7 @@ const criminalcases = computed(() => {
     list-style: none;
     gap: 0.3rem;
     border-bottom: 1px solid #ddd;
+    overflow-x: auto;
 
     span {
       padding: 10px;
