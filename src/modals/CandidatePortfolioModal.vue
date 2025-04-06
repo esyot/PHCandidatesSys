@@ -115,7 +115,7 @@ const criminalcases = computed(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     margin-inline: 10px;
     background-color: #fff;
     border-radius: 25px;
@@ -154,7 +154,7 @@ const criminalcases = computed(() => {
         padding: 10px;
         border: none;
         background-color: #fff;
-        font-size: 16pt;
+        font-size: 14pt;
         opacity: 50%;
 
         &:hover {
@@ -246,7 +246,7 @@ const criminalcases = computed(() => {
         padding: 10px;
         border: none;
         background-color: #fff;
-        font-size: 16pt;
+        font-size: 14pt;
         opacity: 50%;
 
         &:hover {
