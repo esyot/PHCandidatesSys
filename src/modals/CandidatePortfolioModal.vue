@@ -29,12 +29,13 @@ const criminalcases = computed(() => {
 <template>
   <div class="modal" @click.self="closeModal">
     <button class="modal-close-btn" @click="closeModal">&times;</button>
+
     <div class="modal-container">
       <div class="left">
         <img :src="props.candidate.img" :alt="props.candidate.name" />
-        <h2>{{ props.candidate.name }}</h2>
-        <p>{{ props.candidate.position }}</p>
-        <p>Party: {{ props.candidate.party }}</p>
+        <span class="name">{{ props.candidate.name }}</span>
+        <span class="position">{{ props.candidate.position }}</span>
+        <span class="party">Party-list: {{ props.candidate.party }}</span>
       </div>
 
       <div class="right">
@@ -59,16 +60,18 @@ const criminalcases = computed(() => {
             v-for="(criminalcase, index) in criminalcases"
             :key="index"
           >
-            <strong>
-              <i>{{ criminalcase.title }}</i>
-            </strong>
-            <p>{{ criminalcase.description }}</p>
-            <i
-              >Source:
-              <a :href="criminalcase.source" target="_blank">{{
-                criminalcase.source
-              }}</a></i
-            >
+            <div class="text">
+              <span>
+                {{ criminalcase.title }}
+              </span>
+              <p>{{ criminalcase.description }}</p>
+              <i
+                >Source:
+                <a :href="criminalcase.source" target="_blank">{{
+                  criminalcase.source
+                }}</a></i
+              >
+            </div>
           </div>
           <div v-if="criminalcases.length === 0">None</div>
         </div>
@@ -85,7 +88,8 @@ const criminalcases = computed(() => {
   justify-content: center;
   align-items: center;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  animation: popUp 0.3s ease-in-out forwards, increaseOpacity 2s 0.3s forwards;
 
   .modal-close-btn {
     padding: 10px;
@@ -106,73 +110,168 @@ const criminalcases = computed(() => {
   }
 }
 
-.modal-container {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-inline: 10px;
-  min-width: 400px;
-}
-
-.left,
-.right {
-  padding: 20px;
-}
-
-.left {
-  width: 50%;
-  text-align: center;
-}
-
-.right {
-  width: 50%;
-
-  .menu-items {
+@media (orientation: portrait) {
+  .modal-container {
     display: flex;
-    list-style: none;
-    gap: 0.3rem;
-    border-bottom: 1px solid #ddd;
-    overflow-x: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    margin-inline: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+  }
 
-    span {
-      padding: 10px;
-      border: none;
-      background-color: #fff;
-      font-size: 20pt;
-      opacity: 50%;
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    .name {
+      font-weight: bold;
+      font-size: 18pt;
+    }
+    .position {
+      width: 200px;
+      text-align: center;
+    }
 
-      &:hover {
-        text-decoration: underline;
-        cursor: pointer;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+
+  .right {
+    .menu-items {
+      display: flex;
+      list-style: none;
+      gap: 0.3rem;
+      border-bottom: 1px solid #ddd;
+      overflow-x: auto;
+
+      span {
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        font-size: 16pt;
+        opacity: 50%;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        &.active {
+          opacity: 100%;
+          color: #007bff;
+        }
       }
+    }
 
-      &.active {
-        opacity: 100%;
-        color: #007bff;
+    .background-container {
+      overflow-y: auto;
+      height: 35vh;
+      width: 90vw;
+      padding-inline: 10px;
+    }
+
+    .case-container {
+      overflow-y: auto;
+      height: 35vh;
+      width: 90vw;
+      padding-inline: 10px;
+      .text {
+        width: 100%;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        span {
+          font-weight: bold;
+          font-size: 1rem;
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 0.875rem;
+          margin: 0;
+        }
       }
     }
   }
 }
 
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
+@media (orientation: landscape) {
+  .modal-container {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+  }
 
-.case-container {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 50vh;
-}
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    .name {
+      font-weight: bold;
+      font-size: 18pt;
+    }
+    .position {
+      width: 200px;
+      text-align: center;
+    }
 
-.case-item {
-  display: flex;
-  flex-direction: column;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
 
-  i {
-    margin-bottom: 10px;
+  .right {
+    width: 100%;
+    .menu-items {
+      display: flex;
+      list-style: none;
+      gap: 0.3rem;
+      border-bottom: 1px solid #ddd;
+      overflow-x: auto;
+
+      span {
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        font-size: 16pt;
+        opacity: 50%;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        &.active {
+          opacity: 100%;
+          color: #007bff;
+        }
+      }
+    }
+
+    .background-container {
+      overflow-y: auto;
+      height: 50vh;
+      padding-inline: 10px;
+    }
+
+    .case-container {
+      overflow-y: auto;
+      height: 50vh;
+      padding-inline: 10px;
+    }
   }
 }
 </style>

@@ -24,14 +24,14 @@ const closeHelloModal = () => {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .modal {
   display: flex;
   position: fixed;
   align-items: center;
   justify-content: center;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  animation: popUp 0.3s ease-in-out forwards, increaseOpacity 2s 0.3s forwards;
 
   .modal-container {
     background-color: #fff;
