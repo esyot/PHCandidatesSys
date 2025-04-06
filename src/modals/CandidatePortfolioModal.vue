@@ -28,6 +28,7 @@ const criminalcases = computed(() => {
 
 <template>
   <div class="modal" @click.self="closeModal">
+    <button class="modal-close-btn" @click="closeModal">&times;</button>
     <div class="modal-container">
       <div class="left">
         <img :src="props.candidate.img" :alt="props.candidate.name" />
@@ -79,11 +80,30 @@ const criminalcases = computed(() => {
 <style lang="scss" scoped>
 .modal {
   display: flex;
+  flex-direction: column;
   position: fixed;
   justify-content: center;
   align-items: center;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
+
+  .modal-close-btn {
+    padding: 10px;
+    font-size: 20pt;
+    margin: 10px;
+    border-radius: 100%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: #3d3d3d;
+    color: #fff;
+    opacity: 50%;
+
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+    }
+  }
 }
 
 .modal-container {
@@ -143,6 +163,7 @@ img {
 
 .case-container {
   overflow-y: auto;
+  overflow-x: hidden;
   height: 50vh;
 }
 
