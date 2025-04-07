@@ -118,6 +118,8 @@ export const candidates = [
     group: "Riding-in-tandem Team",
     position:
       "Incumbent House representative for 1-Rider Partylist (2022–present)",
+    background:
+      "He was formerly with the Philippine National Police (PNP), where he was assigned to the Highway Patrol Group. He also held the position of Public Information Office chief of the PNP Cavite office. He is the founder of the Riders’ Safety Advocates of the Philippines (RSAP), an organization dedicated to promoting road safety and protecting the rights of motorcycle riders. As part of his advocacy, he runs the YouTube channel “Colonel Bosita, RSAP”. Bosita gained national attention following an incident in 2021 when he questioned a Metropolitan Manila Development Authority (MMDA) traffic enforcer’s issuance of a ticket to a motorcycle-riding couple for violating a shoes-only policy. The MMDA accused him of exploiting traffic enforcers for political gain and filed charges of grave coercion and usurpation of authority against him. He was arrested in Surigao del Sur in 2022 but later posted bail. For the 2022 elections, he partnered with the Bicol-based motorcycle club 1-Rider to participate in the party-list system. He was named the second nominee of the group, which secured two congressional seats, allowing him to enter Congress. In 2024, Bosita announced his candidacy for the 2025 senatorial elections, citing his partylist’s struggles in passing legislation as a motivating factor for seeking a higher position in government.",
   },
   {
     id: 13,
@@ -126,6 +128,8 @@ export const candidates = [
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "Incumbent House representative for GABRIELA (since 2016)",
+    background:
+      "A women’s and children’s rights advocate and politician. She has been the representative of the Gabriela Women’s Party at the House of Representatives since 2016, serving in the 17th, 18th, and 19th congresses. She earned her Bachelor of Arts degree in Philippine Studies from the University of the Philippines Diliman. Following her graduation, she taught Philippine Literature, Humanities, and Science, Technology, and Society at both UP Baguio and UP Manila. Brosas has been deeply involved in advocacy for women and children’s rights. She served as the spokesperson for the Anti-Child Pornography Alliance and co-convenor for the Save Nena campaign, which aimed to combat child prostitution. She was also the executive director of Akap sa Bata ng mga Guro Kalinga, a nationwide alliance of volunteer daycare teachers. In Congress, she co-authored the Sexual Orientation and Gender Identity Expression (SOGIE) Equality Bill, aiming to prevent discrimination based on sexual orientation. She also co-authored the anti-endo bill, which sought to end labor contractualization and provide workers with security of tenure. She was a vocal supporter of the franchise renewal for ABS-CBN and opposed the passage of the anti-terror bill. She also stood against proposed amendments to the 1987 Constitution that would alter economic provisions related to foreign ownership. In 2023, she announced her intention to run for a Senate seat in the 2025 elections.",
   },
   {
     id: 14,
@@ -134,6 +138,8 @@ export const candidates = [
     party: "DPP",
     group: "—",
     position: "—",
+    background:
+      "Roy Jerusalem Cabonegro is an environmental advocate who has provided consultancy services to various government agencies and non-government organizations. He is the national chairperson of the Makakalikasan (Nature Party Philippines), an emerging national green political party in the Philippines. Cabonegro obtained his political science degree from De La Salle University in 1993. Cabonegro has advocated for environmental legislation in the Philippines, including the Clean Water Act and the Zero Ecological Solid Waste Management Law. From 2000 to 2015, Cabonegro worked at the Civil Society Counterpart Council for Sustainable Development Inc., World Wildlife Fund, Sustainability Watch, the International Institute for Rural Reconstruction-Regional Center for Asia, and South East Asia Regional Initiatives for Community Empowerment. Between 2016 and 2019, he was a consultant of the Mindoro Biodiversity Conservation Foundation, the Manila Bay Coordinating Office of the Department of Environment and Natural Resources, and the Commission on Human Rights. He was president of Aksyon Kalikasan (Eco Actions Ph) Inc. and executive director of the LUNTIAN Center for Environmental Governance, Inc. He also served as the managing trustee of the Partido Kalikasan Institute Inc. from 2007 to 2011. Cabonegro ran for senator in the 2022 elections under the Laban ng Masa – Labor and Ecology Advocates for Democracy coalition, supporting then-presidential candidate Leody de Guzman. He placed 46th out of 64 candidates, receiving 880,919 votes, or 1.59% of the total votes cast. He is married to Maria Belinda Cabonegro. - Rappler 2025",
   },
   {
     id: 15,
@@ -142,6 +148,8 @@ export const candidates = [
     party: "PPP",
     group: "—",
     position: "—",
+    background:
+      "Allen Arat Capuyan is a retired military officer who is currently serving as chairperson of the National Commission on Indigenous Peoples (NCIP), an attached agency of the Department of Social Welfare and Development responsible for safeguarding the rights of the indigenous communities in the Philippines. A graduate of the Philippine Military Academy Class of 1983, he held various intelligence and security positions throughout his military career. He served as Chief of the Intelligence Service Unit in Davao City (1997–2000) and later as Chief for Operations of the Intelligence Service of the Armed Forces of the Philippines (ISAFP) under the Arroyo administration. In 2011, he was implicated by an ISAFP official in the controversial burning of the “Hello, Garci” tapes. Outside military, he assumed key government roles, including assistant general manager for security and emergency services of Manila International Airport Authority (MIAA), presidential adviser on indigenous peoples’ concerns under the Duterte administration, and executive director of the National Secretariat of the National Task Force to End Local Communist Armed Conflict. In 2017, he took a leave of absence from MIAA after being implicated in alleged corruption at the Bureau of Customs during a Senate inquiry into the smuggling of shabu. He denied the allegations and later resigned in 2018. At NCIP, he was initially appointed ethnographic commissioner for Regions 11 & 13 before assuming the role of chairperson in 2022. In recognition of his contributions to public service, he received Mindanao’s Man of Outstanding Achievements in the Field of Public Service and Leadership Award in 2023. He is married to Gloria Capuyan. - Rappler 2025",
   },
   {
     id: 16,
@@ -150,6 +158,8 @@ export const candidates = [
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "House representative for Bayan Muna (2004–2013)",
+    background:
+      "Teodoro “Teddy” Acevedo Casiño is an activist and politician who represented Bayan Muna partylist in the House of Representatives. He pursued a Bachelor of Arts in Sociology at the University of the Philippines Los Baños, serving as editor-in-chief of the student publication, The UPLB Perspective, and graduating in 1993. His activism began in his student years, leading to his election as national president of the College Editors’ Guild of the Philippines in 1991. Post-graduation, he joined the Kilusang Mayo Uno labor movement and later became secretary general of Bagong Alyansang Makabayan (BAYAN) in 1999. From 2004 to 2013, Casiño served as partylist representative. He authored and co-authored several significant laws, including the Public Attorneys Act, the Tax Relief Act, the Rent Control Act, and the Anti-Torture Act. He was known for his opposition to controversial policies such as the Human Security Act and the Visiting Forces Agreement. In 2010, he served as campaign manager for the senatorial campaigns of fellow Bayan Muna representatives Liza Maza and Satur Ocampo, who both lost. He ran in 2013 for a Senate seat under the Makabayan coalition but was unsuccessful. After his congressional tenure, he returned to activism, and was elected chairperson of BAYAN. Throughout his career, Casiño has faced legal challenges and accusations of being affiliated with communist groups, which he has consistently denied. In 2017, he was charged with breach of peace, assault, and disobedience to authorities following a protest during the ASEAN Summit in Manila. In 2023, he filed a civil lawsuit against SMNI hosts Lorraine Badoy and Jeffrey Celiz for red-tagging. Casiño is married to Ruth Cervantes, and they have two children. - Rappler 2025",
   },
   {
     id: 17,
@@ -158,6 +168,8 @@ export const candidates = [
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "Incumbent House representative for ACT Teachers (since 2016)",
+    background:
+      "Francisca “France” Lustina Castro is an educator and trade union activist, serving as a partylist representative for the Alliance of Concerned Teachers (ACT) since 2019. She has a background in Mathematics Education and has been deeply involved in the teachers' union movement, holding leadership positions in ACT and other organizations. Castro has advocated for salary increases for teachers, tax reforms, and improved support for public education. She has also been active in supporting indigenous communities. In 2018, she faced charges related to transporting Lumad minors, but she and others involved asserted it was a rescue mission. In 2024, she was sentenced to prison in connection with the incident, but the case is under appeal. Castro has received several international awards for her contributions to trade union rights. She is a single mother of two.",
   },
   {
     id: 18,
@@ -233,67 +245,91 @@ export const candidates = [
   {
     id: 25,
     name: "Luke Espiritu",
+    img: "https://www.rappler.com/tachyon/2025/01/ESPIRITU-LUKE.jpg?fit=300%2C300&resize=200%2C200",
     party: "PLM",
     group: "—",
     position: "President of Bukluran ng Manggagawang Pilipino",
+    background:
+      "A lawyer, labor leader, and president of the Bukluran ng Manggagawang Pilipino. He holds a Bachelor of Arts in Communication Arts and a Juris Doctor degree from Ateneo de Manila University. Espiritu began his legal career handling public interest cases, including those against President Gloria Macapagal Arroyo and for the victims of extrajudicial killings in Negros Occidental. He focuses on advocacy in areas like climate justice, academic freedom, and human rights, serving as legal counsel for several organizations, including the Teachers Dignity Coalition and Philippine Movement for Climate Justice. As a labor leader, he advocates for workers' rights, including wage increases and support for micro, small, and medium enterprises. Espiritu also champions social issues such as the legalization of divorce, same-sex marriage, and abortion. In 2023, he gained attention for responding to a social media post by influencer Donnalyn Bartolome, highlighting the struggles of Filipino workers. Espiritu was a senatorial candidate in the 2022 elections and is running again for the 2025 elections under the Partido Lakas ng Masa party. He is married to Aimee Espiritu, and they have four children.",
   },
   {
     id: 26,
     name: "Mody Floranda",
+    img: "https://www.rappler.com/tachyon/2025/01/FLORANDA-MODY.jpg?fit=300%2C300&resize=200%2C200",
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "Chairperson of PISTON",
+    background:
+      "A transport leader and activist, currently serving as the president of the Pagkakaisa ng mga Samahan ng Tsuper at Opereytor Nationwide (PISTON), which advocates for jeepney drivers and operators' rights. Born into a family of farmers and fisherfolk who suffered under Martial Law, Floranda endured military torture and later worked as an FX driver in Metro Manila, experiencing firsthand the struggles of transport workers, such as high fines and rising fuel prices. He has led protests against the government's jeepney phaseout program and criticized oil price hikes and the Oil Deregulation Law. In 2023, he filed a petition with the Supreme Court to challenge government policies related to the Public Utility Vehicle Modernization Program. Floranda was announced as a candidate for the Makabayan senatorial slate for the 2025 elections.",
   },
   {
     id: 27,
     name: "Marc Gamboa",
+    img: "https://www.rappler.com/tachyon/2025/01/GAMBOA-MARC-LOUIE.jpg?fit=300%2C300&resize=200%2C200",
     party: "Independent",
     group: "—",
     position: "—",
+
+    background:
+      "Marc Louie Santos Gamboa is a political vlogger and social media personality known for his YouTube channel, Models of Manila TV, which focuses on political and social commentary. Beyond online content creation, he is involved in e-commerce, talent management, and television production. He is a business partner of television personality Jojo Alejar. In 2024, he filed his certificate of candidacy for the 2025 Philippine Senate elections, positioning himself as a representative of vloggers, content creators, online sellers, and freelancers.",
   },
   {
     id: 28,
     name: "Bong Go",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Senator_Bong_Go_portrait_%28cropped%29.jpg/330px-Senator_Bong_Go_portrait_%28cropped%29.jpg",
     party: "PDP",
     group: "Partido Demokratiko Pilipino",
     position: "Incumbent senator (since 2019)",
+    background:
+      "Born on June 14, 1974, is a Filipino politician currently serving as a senator since 2019. He also holds several committee chairs in the Philippine Senate, including the Youth, Health and Demography, and Sports committees. Prior to his senatorial role, Go worked closely with President Rodrigo Duterte as his Special Assistant and Head of the Presidential Management Staff from 2016 to 2018. Go has been Duterte's personal aide since 1998, when Duterte was still the mayor of Davao City. Go hails from a Chinese Filipino family and is the son of businessman Desiderio Go and Marichu Tesoro-Go. He graduated from Ateneo de Davao University with a degree in marketing. Go is affiliated with the Partido Demokratiko Pilipino and previously with Pederalismo ng Dugong Dakilang Samahan. He is married to Emmylou Cruz, and they have two children. Additionally, Go had a brief basketball career, playing for the Muntinlupa Cagers in 2018-2019.",
   },
   {
     id: 29,
     name: "Norberto Gonzales",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Norberto_Gonzales.jpg/330px-Norberto_Gonzales.jpg",
     party: "PDSP",
     group: "—",
     position: "Secretary of National Defense (2009–2010)",
+    background: `Norberto "Bert" Borja Gonzales served as Secretary of National Defense and National Security Adviser under President Gloria Macapagal-Arroyo. He played a key role in peace talks with various insurgent groups and co-founded the Partido Demokratiko Sosyalista ng Pilipinas (PDSP). Gonzales held several significant positions, including Presidential Adviser for Special Concerns and National Security Adviser, but was cited for contempt by the Senate in 2005. He ran for president in the 2022 elections, placing 9th, and now chairs the PDSP as he prepares to run for the Senate in 2025.`,
   },
   {
     id: 30,
     name: "Jesus Hinlo Jr.",
+    img: "https://www.rappler.com/tachyon/2025/01/HINLO-JAYVEE.jpg?fit=300%2C300&resize=200%2C200",
     party: "PDP",
     group: "Partido Demokratiko Pilipino",
     position:
       "Commissioner of the Presidential Anti-Corruption Commission (2022)",
+
+    background: `Jesus “Jayvee” Villanueva Hinlo Jr. is a lawyer and political figure who serves as the Deputy Secretary General for Visayas of PDP-Laban. He has held various government positions under the Duterte administration, including Undersecretary for Public Safety and Commissioner of the Presidential Anti-Corruption Commission. Hinlo played a key role in promoting Duterte's presidential bid in 2016 and later became president of the Partido Federal ng Pilipinas. After co-founding the Philippine Development Movement in 2019, he returned to PDP-Laban in 2023. Hinlo is running for the Senate in the 2025 elections.`,
   },
   {
     id: 31,
     name: "Gregorio Honasan",
+    img: "https://www.rappler.com/tachyon/2025/01/HONASAN-GRINGO.jpg?fit=300%2C300&resize=200%2C200",
     party: "Reform PH",
     group: "—",
     position:
       "Secretary of Information and Communications Technology (2019–2021)",
+    background: `Gregorio "Gringo" Honasan II is a former military officer and politician who served as the Secretary of the Department of Information and Communications Technology from 2019 to 2021. A graduate of the Philippine Military Academy, he played a key role in the Reform the Armed Forces Movement and participated in several coup attempts during the Marcos and Aquino administrations. After receiving amnesty in 1992, he transitioned into politics, serving multiple terms in the Senate and authoring significant legislation like the Clean Air Act and the CARPER Act. He ran for vice president in 2016 and senator in 2022, but was defeated both times. In 2023, he co-founded the Reform PH party and is now campaigning for the 2025 senatorial elections.`,
   },
   {
     id: 32,
     name: "Relly Jose Jr.",
+    img: "https://www.rappler.com/tachyon/2025/01/RELLY-JOSE.jpg?fit=300%2C300&resize=200%2C200",
     party: "KBL",
     group: "—",
     position: "—",
+    background: `Relly Nufable Jose Jr. is a seafarer and the national president of Kilusang Bagong Lipunan (KBL) since 2022, after serving as vice president for Visayas. He holds degrees in Marine Transportation, Maritime Education, Business Administration, and Public Administration. With nearly 25 years of experience in the maritime industry, including 13 years on international vessels, he is the president and CEO of GMM Global Maritime Manila Inc. and the founder of the Dugong Marino OFW Foundation. In 2024, he filed his candidacy for the 2025 senatorial elections under KBL.`,
   },
   {
     id: 33,
     name: "Panfilo Lacson",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sen._Panfilo_M._Lacson_cropped.jpg/330px-Sen._Panfilo_M._Lacson_cropped.jpg",
     party: "Independent",
     group: "Alyansa para sa Bagong Pilipinas",
     position: "Senator (2016–2022)",
+    background: `Panfilo "Ping" Lacson is a former Filipino politician and police general who served three terms as a senator from 2001 to 2013 and from 2016 to 2022. He was the Director General of the Philippine National Police (PNP) from 1999 to 2001, known for implementing reforms and leading anti-corruption campaigns. Lacson played a key role in President Estrada's ouster in 2001 and ran for president in 2004 and 2022, though he lost both times. He was appointed Presidential Assistant for Rehabilitation and Recovery in 2013, overseeing the recovery efforts after Typhoon Yolanda. Lacson is now running for the 2025 senatorial elections as an independent candidate, endorsed by President Marcos.`,
   },
   {
     id: 34,
