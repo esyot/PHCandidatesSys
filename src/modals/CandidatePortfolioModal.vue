@@ -118,7 +118,7 @@ const criminalcases = computed(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 75vh;
     margin-inline: 10px;
     background-color: #fff;
     border-radius: 25px;
