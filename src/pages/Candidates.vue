@@ -1,5 +1,7 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { orderBy } from "lodash";
+
 import { candidates } from "/src/assets/json/candidates.js";
 import CandidatePortfolioModal from "@/modals/CandidatePortfolioModal.vue";
 
@@ -10,6 +12,10 @@ const toggleCandidatePortfolioModal = (candidate) => {
   isSelectedCandidate.value = !isSelectedCandidate.value;
   selectedCandidate.value = candidate;
 };
+
+const orderedCandidates = computed(() => {
+  return orderBy(candidates, ["name"]);
+});
 </script>
 
 <template>
@@ -23,7 +29,7 @@ const toggleCandidatePortfolioModal = (candidate) => {
     <div
       @click="toggleCandidatePortfolioModal(candidate)"
       class="card"
-      v-for="(candidate, index) in candidates"
+      v-for="(candidate, index) in orderedCandidates"
       :key="index"
     >
       <img :src="candidate.img" alt="" />
