@@ -92,6 +92,7 @@ const submitForm = async () => {
   justify-content: center;
   align-items: center;
   animation: popUp 0.3s ease-in-out forwards, increaseOpacity 2s 0.3s forwards;
+  z-index: 100;
 
   .modal-container {
     background-color: #fff;
