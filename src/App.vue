@@ -67,24 +67,18 @@ const logDeviceVisit = async () => {
   const os = getOperatingSystem(userAgent);
   const deviceName = getDeviceName(userAgent);
   const timestamp = new Date().toISOString();
-  const date = new Date().toISOString().split("T")[0]; // Get the current date (YYYY-MM-DD)
+  const date = new Date().toISOString().split("T")[0];
 
   try {
-    // Check if a visit has already been logged for today for this user/device
     const visitRef = collection(db, "device_visits");
     const visitQuery = query(
       visitRef,
       where("userAgent", "==", userAgent),
-      where("timestamp", ">=", `${date}T00:00:00.000Z`), // Compare to today's date
-      where("timestamp", "<", `${date}T23:59:59.999Z`) // Ensure it's within today's date
+      where("timestamp", ">=", `${date}T00:00:00.000Z`),
+      where("timestamp", "<", `${date}T23:59:59.999Z`)
     );
 
     const querySnapshot = await getDocs(visitQuery);
-
-    if (!querySnapshot.empty) {
-      console.log("You have already logged a visit today.");
-      return;
-    }
 
     await addDoc(collection(db, "device_visits"), {
       userAgent,
@@ -93,9 +87,13 @@ const logDeviceVisit = async () => {
       deviceName,
       timestamp,
     });
-    console.log("Device visit logged successfully");
   } catch (error) {
-    console.error("Error logging visit:", error);
+    const timestamp = new Date().toISOString();
+
+    await addDoc(collection(db, "system_errors"), {
+      error,
+      timestamp,
+    });
   }
 };
 
