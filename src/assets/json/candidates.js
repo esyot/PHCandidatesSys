@@ -26,6 +26,8 @@ export const candidates = [
     party: "Independent",
     group: "—",
     position: "—",
+    background:
+      "An independent candidate running for the Philippine Senate in the 2025 elections. He previously ran for vice president in 2022 but was disqualified. Amad advocates for key issues such as the Anti-Political Dynasty Bill, market reforms to reduce prices, pension increases for retirees, and interreligious dialogue to promote peace in Mindanao.",
   },
   {
     id: 4,

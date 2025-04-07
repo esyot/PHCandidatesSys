@@ -3,7 +3,7 @@ import { ref, defineEmits } from "vue";
 
 const emit = defineEmits();
 
-const message = ref("Boto mo, kinabukasan ko!");
+const message = ref("Boto mo, Kinabukasan ko! #HALALAN2025");
 
 const closeHelloModal = () => {
   emit("closeHelloModal");
@@ -15,11 +15,10 @@ const closeHelloModal = () => {
     <div class="modal-container">
       <div class="modal-content">
         <img src="/public/assets/images/flag-ph.jpg" alt="" />
-        <span class="modal-msg"> {{ message }}</span>
+        <p class="modal-msg">{{ message }}</p>
+        <span @click="closeHelloModal">Close</span>
       </div>
-      <div class="modal-footer">
-        <button @click="closeHelloModal">Close</button>
-      </div>
+      <div class="modal-footer"></div>
     </div>
   </div>
 </template>
@@ -35,15 +34,19 @@ const closeHelloModal = () => {
 
   .modal-container {
     background-color: #fff;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-inline: 10px;
+    z-index: 100;
 
     .modal-content {
       display: flex;
       position: relative;
+      flex-direction: column;
 
       img {
-        object-fit: contain;
+        object-fit: fill;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
@@ -53,20 +56,25 @@ const closeHelloModal = () => {
         color: #fff;
         font-size: 20pt;
         text-align: center;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
       }
-    }
 
-    .modal-footer {
-      display: flex;
-      justify-content: center;
-      margin: 10px;
-
-      button {
+      span {
+        display: flex;
+        justify-content: center;
         padding: 10px;
+        opacity: 75%;
+
+        &:hover {
+          opacity: 100%;
+          cursor: pointer;
+          background-color: #ddd;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
       }
     }
   }

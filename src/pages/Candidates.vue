@@ -46,7 +46,7 @@ const toggleCandidatePortfolioModal = (candidate) => {
     &:hover {
       transition: ease-in-out;
       transition-duration: 300ms;
-      scale: 1.5;
+      scale: 1.1;
       cursor: pointer;
     }
   }
@@ -55,6 +55,7 @@ const toggleCandidatePortfolioModal = (candidate) => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.3rem;
   padding: 10px;
   box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.3);
 
@@ -63,6 +64,7 @@ const toggleCandidatePortfolioModal = (candidate) => {
     width: 80px;
     height: 80px;
     border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   }
 
   span {

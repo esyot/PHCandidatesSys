@@ -34,7 +34,7 @@ const criminalcases = computed(() => {
       <div class="left">
         <img :src="props.candidate.img" :alt="props.candidate.name" />
         <span class="name">{{ props.candidate.name }}</span>
-        <span class="position">{{ props.candidate.position }}</span>
+        <i class="position">{{ props.candidate.position }}</i>
         <span class="party">Party-list: {{ props.candidate.party }}</span>
       </div>
 
@@ -46,7 +46,7 @@ const criminalcases = computed(() => {
             >Background</span
           >
           <span :class="{ active: selectedTab === 'cases' }" @click="selectTab('cases')"
-            >Cases</span
+            >Criminal Cases</span
           >
         </div>
 
@@ -64,7 +64,9 @@ const criminalcases = computed(() => {
               <span>
                 {{ criminalcase.title }}
               </span>
+
               <p>{{ criminalcase.description }}</p>
+
               <i
                 >Source:
                 <a :href="criminalcase.source" target="_blank">{{
@@ -101,7 +103,7 @@ const criminalcases = computed(() => {
     width: 50px;
     background-color: #3d3d3d;
     color: #fff;
-    opacity: 50%;
+    opacity: 75%;
 
     &:hover {
       opacity: 100%;
@@ -119,6 +121,7 @@ const criminalcases = computed(() => {
     margin-inline: 10px;
     background-color: #fff;
     border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   }
 
   .left {
@@ -126,6 +129,7 @@ const criminalcases = computed(() => {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+
     .name {
       font-weight: bold;
       font-size: 18pt;
@@ -181,6 +185,7 @@ const criminalcases = computed(() => {
       height: 35vh;
       width: 90vw;
       padding-inline: 10px;
+
       .text {
         width: 100%;
         white-space: normal;
@@ -210,6 +215,7 @@ const criminalcases = computed(() => {
     margin-inline: 10px;
     background-color: #fff;
     border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   }
 
   .left {
@@ -217,6 +223,9 @@ const criminalcases = computed(() => {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+
     .name {
       font-weight: bold;
       font-size: 18pt;
@@ -235,6 +244,7 @@ const criminalcases = computed(() => {
 
   .right {
     width: 100%;
+
     .menu-items {
       display: flex;
       list-style: none;
@@ -245,7 +255,6 @@ const criminalcases = computed(() => {
       span {
         padding: 10px;
         border: none;
-        background-color: #fff;
         font-size: 14pt;
         opacity: 50%;
 
@@ -271,6 +280,19 @@ const criminalcases = computed(() => {
       overflow-y: auto;
       height: 50vh;
       padding-inline: 10px;
+
+      .text {
+        margin-bottom: 10px;
+        span {
+          font-weight: bold;
+          font-size: 1rem;
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+
+        a {
+        }
+      }
     }
   }
 }
