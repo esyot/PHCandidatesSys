@@ -80,6 +80,10 @@ const logDeviceVisit = async () => {
 
     const querySnapshot = await getDocs(visitQuery);
 
+    if (!querySnapshot.empty) {
+      return;
+    }
+
     await addDoc(collection(db, "device_visits"), {
       userAgent,
       deviceType,
@@ -125,7 +129,7 @@ onBeforeUnmount(() => {
         <i class="fas fa-bars" @click="toggleMenuItems" title="Click to view items"></i>
 
         <div ref="menuItemsRef">
-          <MenuItems v-if="isOpenMenuItems"></MenuItems>
+          <MenuItems :isOpenMenuItems="isOpenMenuItems"></MenuItems>
         </div>
       </div>
     </nav>

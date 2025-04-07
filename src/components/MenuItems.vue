@@ -1,9 +1,28 @@
-<script setup></script>
+<script setup>
+import { ref, defineProps } from "vue";
+
+const props = defineProps({
+  isOpenMenuItems: Boolean,
+});
+
+import SendFeedbackModal from "@/modals/SendFeedbackModal.vue";
+
+const isOpenSEndFeedbackModal = ref(false);
+
+const toggleSendFeedbackModal = () => {
+  isOpenSEndFeedbackModal.value = !isOpenSEndFeedbackModal.value;
+};
+</script>
 <template>
-  <div class="items">
+  <SendFeedbackModal
+    v-if="isOpenSEndFeedbackModal"
+    @toggleSendFeedbackModal="toggleSendFeedbackModal"
+  ></SendFeedbackModal>
+
+  <div class="items" v-if="isOpenMenuItems">
     <router-link to="/">Login</router-link>
     <router-link to="/">About</router-link>
-    <router-link to="/">Feedback</router-link>
+    <a href="#" @click="toggleSendFeedbackModal">Feedback</a>
   </div>
 </template>
 
