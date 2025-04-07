@@ -35,7 +35,7 @@ const criminalcases = computed(() => {
         <img :src="props.candidate.img" :alt="props.candidate.name" />
         <span class="name">{{ props.candidate.name }}</span>
         <i class="position">{{ props.candidate.position }}</i>
-        <span class="party">Party-list: {{ props.candidate.party }}</span>
+        <span class="party">Party: {{ props.candidate.party }}</span>
       </div>
 
       <div class="right">
@@ -45,8 +45,8 @@ const criminalcases = computed(() => {
             @click="selectTab('background')"
             >Background</span
           >
-          <span :class="{ active: selectedTab === 'cases' }" @click="selectTab('cases')"
-            >Criminal Cases</span
+          <span :class="{ active: selectedTab === 'cases' }" @click="selectTab('cases')">
+            Cases</span
           >
         </div>
 

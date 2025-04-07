@@ -36,6 +36,8 @@ export const candidates = [
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "Secretary general of Filipino Nurses United",
+    background:
+      "Jocelyn “Alyn” Santos Andamo is a registered nurse, educator, and labor leader currently serving as the Secretary General of Filipino Nurses United (FNU), a national labor association recognized by the Department of Labor and Employment. Originally aspiring to follow in the footsteps of her parents who are dentists, she faced financial constraints, leading her to pursue nursing instead. She studied at the Far Eastern University, where she graduated in 1983. Her professional journey began as a daycare nurse at the Philippine Nurses Association. She then became the training coordinator and eventually the executive director of the Philippine Youth Health Program, a non-government organization focused on training health students for community service. From 1994 to 2009, she worked with community-based health programs under the Council for Health and Development. Her work with nurses intensified between 2009 and 2015 as the lead nurse organizer for the Alliance of Health Workers, where she held key roles such as education committee coordinator, international solidarity officer, and nurses committee coordinator. In 2015, she was instrumental in founding the Filipino Nurses United, where she is currently secretary general.",
   },
   {
     id: 5,
@@ -44,6 +46,8 @@ export const candidates = [
     party: "KANP",
     group: "KiBam",
     position: "Senator (2013–2019)",
+    background:
+      "Paolo Benigno “Bam” Aguirre Aquino IV is a social entrepreneur and former senator. He is a member of the prominent Aquino family, being the first cousin of former president Benigno Aquino III and nephew of former senator Benigno “Ninoy” Aquino Jr.",
   },
   {
     id: 6,
@@ -52,6 +56,8 @@ export const candidates = [
     party: "Makabayan",
     group: "Oposisyon ng Bayan",
     position: "Vice chairperson of Pamalakaya",
+    background:
+      "Ronnel Gondraneos Arambulo is a fisherman, environmentalist, and activist who has been the National Vice Chairperson of Pambansang Lakas ng Kilusang Mamamalakaya ng Pilipinas (PAMALAKAYA) since 2023. He has been actively involved with the organization since 2007. He was a member of Anakbayan from 2005 to 2006. He later became the Chairperson of Anakpawis-Binangonan Chapter in 2010 and Anakpawis-Rizal Chapter in 2012. From 2013 to 2019, he served as a kagawad (councilor) in Barangay Malakaban, Binangonan, Rizal, A fisherfolk from Laguna de Bay, Arambulo has led grassroots campaigns since 2008. He has been at the forefront of significant protest actions, including the 2021 coastal protest in Zambales commemorating the arbitration ruling on the South China Sea, the 2023 demonstrations at the Chinese Consulate condemning China’s harassment of Filipino fisherfolk in the West Philippine Sea, and the 2024 collective fishing expedition in Masinloc, Zambales, in defiance of Beijing’s unilateral fishing ban. -Rappler 2025",
   },
   {
     id: 7,
@@ -60,6 +66,8 @@ export const candidates = [
     party: "KKK",
     group: "—",
     position: "—",
+    background:
+      "Ernesto Rillera Arellano is a lawyer and labor leader who served as general secretary of Kilusang Mayo Uno (KMU), one of the Philippines’ largest labor federations. He is recognized as one of the founders of various labor and advocacy organizations. including KMU, the National Confederation of Labor, National Federation of Labor, and Legal Advocates for Workers’ Interest. He is also affiliated with groups like Katipunan ng mga Samahan ng Manggagawa, Katipunan ng Kamalayang Kayumanggi, and Katipunan ng Maralitang Pilipino. - Rappler 2025",
   },
   {
     id: 8,
@@ -68,6 +76,8 @@ export const candidates = [
     party: "Independent",
     group: "—",
     position: "Leader of Kapunungan sa Gagmay'ng Mangingisda sa Concepcion",
+    background:
+      "Roberto “Ka Dodoy” Amido Ballon is a Filipino fisherman, environmental advocate, and recipient of the prestigious Ramon Magsaysay Award (RMA)—often referred to as the “Nobel Prize of Asia”—in 2021. He serves as the chairperson of the Kapunungan sa mga Gagmay ng Mangingisda sa Concepcion, an organization he co-founded with fellow fisherfolk to combat overfishing and restore mangrove forests in Zamboanga Sibugay. Ballon also leads the Coalition of Municipal Fisherfolk Associations of Zamboanga Sibugay, a federation representing 34 fisherfolk organizations in the province. Ballon’s work in rehabilitating mangrove forests has earned him widespread acclaim. Apart from the Ramon Magsaysay Award, he has received numerous accolades, including the Gawad Saka Award in Zamboanga Sibugay in 2003 and 2004, the Department of Agriculture’s National Gawad Saka Award in 2005, most outstanding fisherfolk in Zamboanga Sibugay in 2006, Ateneo de Zamboanga School of Medicine Award as the most outstanding fisherfolk organization leader in 2011, National Gawad Natatanging Parangal (Distinguished Award) under fish conservation by the Bureau of Fisheries and Aquatic Resources in 2019, and the Equator Prize of the United Nations Development Programme in 2023. - Rappler 2025",
   },
   {
     id: 9,
@@ -76,6 +86,8 @@ export const candidates = [
     party: "NPC",
     group: "Alyansa para sa Bagong Pilipinas",
     position: "Mayor of Makati (2016–present)",
+    background:
+      "Abby Binay (full married name: Mar-len Abigail Sombillo Binay-Campos) is a lawyer who has been mayor of Makati City since 2016.  She was the representative of Makati’s 2nd District from 2007 to 2016. She comes from a political family that has been ruling the city since 1986. Her parents, former Vice President Jojo (full name: Jejomar Cabauatan Binay Sr.) and Ellen (full name: Elenita Sombillo-Binay), and brother Junjun (full name: Jejomar Erwin Sombillo Binay Jr.) all served as city mayors. Her elder sister Nancy (full name: Maria Lourdes Sombillo Binay-Angeles) has been serving as a senator since 2013. - Rappler 2025",
   },
   {
     id: 10,
@@ -85,6 +97,8 @@ export const candidates = [
     group: "Partido Demokratiko Pilipino",
     position:
       "Member of the Board of Directors of Philippine Amusement and Gaming Corporation (2021–2022)",
+    background:
+      "James Patrick “Jimmy” Romero Bondoc is a Filipino musician, songwriter, and lawyer who has held various positions at the Philippine Amusement and Gaming Corporation (PAGCOR). Initially part of the entertainment industry, he eventually transitioned into public service and law. He completed his undergraduate education at Ateneo de Manila University, earning a degree in communications in 1997. In 2017, he pursued law at San Beda University before transferring to the University of the East in 2019. He passed the Philippine Bar Examinations in 2023. He gained prominence in the early 2000s as a singer-songwriter and music producer. Signed under Warner Music Philippines from 2002 to 2016, he is best known for original hits such as “Let Me Be the One,” “The Man I Was with You,” and “Akin Na Lang Sana Siya.” In 2002, he founded Magis Productions, where he served as president until 2016. - Rappler 2025",
   },
   {
     id: 11,
@@ -93,6 +107,8 @@ export const candidates = [
     party: "Lakas",
     group: "Alyansa para sa Bagong Pilipinas",
     position: "Incumbent senator (since 2019)",
+    background:
+      "Ramon Bong Revilla Jr. (real name: Jose Mari Mortel Bautista) is a senator in the 19th Congress, serving a fresh first term until 2025. He was previously elected to the same position in 2004 and 2010, and had to take a break in the 2016 election cycle for being term-limited under the Constitution.",
   },
   {
     id: 12,
