@@ -188,4 +188,48 @@ export const cases = [
     source:
       "https://www.philstar.com/headlines/2010/02/06/546772/arrest-warrant-out-ping",
   },
+
+  {
+    id: 20,
+    candidate_id: 36,
+    title: `Ethics Complaint Filed Against Rep. Wilbert "Manoy" Te Lee Over Aggressive Behavior in House Budget Debate`,
+    description: `An ethics complaint has been filed against Rep. Wilbert "Manoy" Te Lee by Representatives Stella Quimbo and Angelica "Nikka" Co, accusing him of aggressive behavior during the House plenary debate on the proposed 2025 budget for the Department of Health. The complaint cites Lee's actions, including forcefully pointing his finger at the budget sponsors and moving toward them in a threatening manner, which made them feel unsafe. Lee later apologized, stating that his actions were fueled by his advocacy for lowering out-of-pocket medical expenses.`,
+    source:
+      "https://www.philstar.com/headlines/2024/10/14/2392467/rep-wilbert-lee-faces-ethics-complaint-aggression-during-budget-debate",
+  },
+  {
+    id: 21,
+    candidate_id: 39,
+    title:
+      "Imee Marcos Linked to Illegal Swiss Foundations as Beneficiary in Graft Case",
+    description: `In the 2018 conviction of her mother, Imelda Marcos, for seven counts of graft, the Sandiganbayan anti-graft court revealed that Imee Marcos, along with her siblings, Bongbong and Irene, were beneficiaries of two illegal Swiss foundations. The Trinidad and Xandy Foundations, established during the Marcos regime, were used to funnel illicit earnings and investments to the Marcos family, further entangling Imee in the legal fallout from the family's controversial wealth.`,
+    source: "https://en.wikipedia.org/wiki/Imee_Marcos",
+  },
+  {
+    id: 22,
+    candidate_id: 39,
+    title:
+      "Imee Marcos Linked to Torture and Murder of Archimedes Trajano: Court Ruling and Controversy",
+
+    description: `In a chilling chapter from Philippine history, Imee Marcos, daughter of the late dictator Ferdinand Marcos, was linked to the torture and murder of Archimedes Trajano in 1977. Trajano, a student at the Mapúa Institute of Technology, was killed after questioning Imee about her appointment as head of the Kabataang Barangay. The Honolulu District Court found Marcos and her bodyguards responsible, awarding $2.5 million in damages to Trajano’s family. Despite the court ruling, Marcos defended her actions, making the case a deeply controversial part of her legacy.`,
+    source: `https://en.wikipedia.org/wiki/Imee_Marcos#:~:text=In%20the%20conviction%20of%20her,Bongbong%20Marcos%2C%20and%20Irene%20Marcos`,
+  },
+  {
+    id: 23,
+    candidate_id: 39,
+    title:
+      "Imee Marcos Linked to Secret Offshore Trusts, Fails to Disclose Assets in Official Declarations",
+    description: `Financial records uncovered by the International Consortium of Investigative Journalists (ICIJ) reveal that Imee Marcos, daughter of the late dictator Ferdinand Marcos, is linked to secret offshore trusts in the British Virgin Islands. Despite being required by law to disclose all assets, Imee failed to include these offshore holdings in her official asset declarations. The discovery raises concerns about the potential concealment of ill-gotten wealth and is now under investigation by the Philippine government’s Presidential Commission on Good Government (PCGG).`,
+    source:
+      "https://www.icij.org/investigations/offshore/ferdinand-marcos-daughter-tied-offshore-trust-caribbean/",
+  },
+  {
+    id: 24,
+    candidate_id: 44,
+    title:
+      "Liza Maza Faces Revived Murder Charges with P1-M Bounty Amid Political Controversy",
+    description: ` Former Congresswoman Liza Maza, along with other leftist leaders, is facing revived murder charges related to killings in 2003 and 2004. A P1-million bounty has been offered for information leading to her arrest, sparking political debate. The case, initially dismissed in 2018, has raised accusations of political motivations, despite claims of insufficient evidence.`,
+    source:
+      "https://www.rappler.com/philippines/208837-citizens-crime-watch-reward-money-arrest-liza-maza-leftist-lawmakers/",
+  },
 ];

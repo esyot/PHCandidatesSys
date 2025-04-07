@@ -14,7 +14,8 @@ const toggleCandidatePortfolioModal = (candidate) => {
 };
 
 const orderedCandidates = computed(() => {
-  return orderBy(candidates, ["name"]);
+  // return orderBy(candidates, ["name"]);
+  return candidates;
 });
 </script>
 
@@ -27,6 +28,7 @@ const orderedCandidates = computed(() => {
 
   <div class="cards">
     <div
+      :title="'Click to view ' + candidate.name + `'s background and cases.`"
       @click="toggleCandidatePortfolioModal(candidate)"
       class="card"
       v-for="(candidate, index) in orderedCandidates"
@@ -49,11 +51,14 @@ const orderedCandidates = computed(() => {
 
 @media (orientation: landscape) {
   .card {
+    display: block;
+    z-index: 1;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+
     &:hover {
-      transition: ease-in-out;
-      transition-duration: 300ms;
-      scale: 1.1;
+      transform: scale(1.2);
       cursor: pointer;
+      opacity: 0.5;
     }
   }
 }

@@ -46,7 +46,7 @@ const criminalcases = computed(() => {
             >Background</span
           >
           <span :class="{ active: selectedTab === 'cases' }" @click="selectTab('cases')">
-            Cases</span
+            Legal Issues & Controversies</span
           >
         </div>
 
@@ -92,6 +92,7 @@ const criminalcases = computed(() => {
   inset: 0;
   padding: 10px;
   animation: popUp 0.3s ease-in-out forwards, increaseOpacity 2s 0.3s forwards;
+  z-index: 2;
 
   .modal-close-btn {
     padding: 10px;
@@ -149,6 +150,7 @@ const criminalcases = computed(() => {
   .right {
     .menu-items {
       display: flex;
+      align-items: center;
       list-style: none;
       gap: 0.3rem;
       border-bottom: 1px solid #ddd;

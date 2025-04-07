@@ -82,6 +82,7 @@ onBeforeUnmount(() => {
     position: sticky;
     top: 0;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 
     .right {
       display: flex;

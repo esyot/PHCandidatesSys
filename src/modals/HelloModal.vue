@@ -31,6 +31,7 @@ const closeHelloModal = () => {
   justify-content: center;
   inset: 0;
   animation: popUp 0.3s ease-in-out forwards, increaseOpacity 2s 0.3s forwards;
+  z-index: 100;
 
   .modal-container {
     background-color: #fff;
