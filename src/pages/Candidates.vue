@@ -14,8 +14,7 @@ const toggleCandidatePortfolioModal = (candidate) => {
 };
 
 const orderedCandidates = computed(() => {
-  // return orderBy(candidates, ["name"]);
-  return candidates;
+  return orderBy(candidates, ["name"]);
 });
 </script>
 
