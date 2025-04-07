@@ -3,9 +3,10 @@ import HelloModal from "@/modals/HelloModal.vue";
 import MenuItems from "@/components/MenuItems.vue";
 
 import { ref, onMounted, onBeforeUnmount } from "vue";
+import { db, collection, addDoc } from "@/firebase";
+import { query, where, getDocs } from "firebase/firestore";
 
 const isHelloModalClosed = ref(false);
-
 const closeHelloModal = () => {
   isHelloModalClosed.value = !isHelloModalClosed.value;
 };
@@ -24,7 +25,82 @@ const handleClickOutside = (event) => {
   }
 };
 
+const getDeviceType = (userAgent) => {
+  if (userAgent.includes("Mobi")) {
+    return "Mobile";
+  } else {
+    return "Desktop";
+  }
+};
+
+const getOperatingSystem = (userAgent) => {
+  if (userAgent.includes("Android")) {
+    return "Android";
+  } else if (userAgent.includes("iPhone")) {
+    return "iOS";
+  } else if (userAgent.includes("Windows")) {
+    return "Windows";
+  } else if (userAgent.includes("Macintosh")) {
+    return "macOS";
+  } else {
+    return "Unknown";
+  }
+};
+
+const getDeviceName = (userAgent) => {
+  if (userAgent.includes("Android")) {
+    return "Android Device";
+  } else if (userAgent.includes("iPhone")) {
+    return "iPhone";
+  } else if (userAgent.includes("Windows")) {
+    return "Windows PC";
+  } else if (userAgent.includes("Macintosh")) {
+    return "Mac";
+  } else {
+    return "Unknown Device";
+  }
+};
+
+const logDeviceVisit = async () => {
+  const userAgent = navigator.userAgent;
+  const deviceType = getDeviceType(userAgent);
+  const os = getOperatingSystem(userAgent);
+  const deviceName = getDeviceName(userAgent);
+  const timestamp = new Date().toISOString();
+  const date = new Date().toISOString().split("T")[0]; // Get the current date (YYYY-MM-DD)
+
+  try {
+    // Check if a visit has already been logged for today for this user/device
+    const visitRef = collection(db, "device_visits");
+    const visitQuery = query(
+      visitRef,
+      where("userAgent", "==", userAgent),
+      where("timestamp", ">=", `${date}T00:00:00.000Z`), // Compare to today's date
+      where("timestamp", "<", `${date}T23:59:59.999Z`) // Ensure it's within today's date
+    );
+
+    const querySnapshot = await getDocs(visitQuery);
+
+    if (!querySnapshot.empty) {
+      console.log("You have already logged a visit today.");
+      return;
+    }
+
+    await addDoc(collection(db, "device_visits"), {
+      userAgent,
+      deviceType,
+      os,
+      deviceName,
+      timestamp,
+    });
+    console.log("Device visit logged successfully");
+  } catch (error) {
+    console.error("Error logging visit:", error);
+  }
+};
+
 onMounted(() => {
+  logDeviceVisit();
   document.addEventListener("click", handleClickOutside);
 });
 
